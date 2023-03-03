@@ -1,0 +1,377 @@
+{% load static %}
+
+<!DOCTYPE html>
+
+<html>
+
+<head>
+
+        <!--Font Awesome css-->
+        <link rel="stylesheet" href="{% static 'css/font-awesome.min.css' %}">
+
+        <!--Bootstrap css-->
+        <link rel="stylesheet" href="{% static 'css/bootstrap.css' %}">
+
+        <!--Owl Carousel css-->
+        <link rel="stylesheet" href="{% static 'css/owl.carousel.min.css' %}">
+        <link rel="stylesheet" href="{% static 'css/owl.theme.default.min.css ' %}">
+
+        <!--Magnific Popup css-->
+        <link rel="stylesheet" href="{% static 'css/magnific-popup.css ' %}">
+
+        <!-- Google Fonts -->
+        <link href="{% static 'https://fonts.googleapis.com/css?family=Raleway:200,300,400,500,600,700,800,900%7cOpen+Sans:400,600,700,800 ' %}" rel="stylesheet">
+        <!--Site Main Style css-->
+        <link rel="stylesheet" href="{% static 'css/style.css' %}">
+
+<link rel= "stylesheet"href= "{% static 'css/coderwebsite.css' %}" type= "text/css">
+
+<script type= "text/javascript"href= "{% static 'js/coderwebsite.js' %}"></script>
+
+</head>
+
+<body>
+<!-- 
+    <div class="hai">
+        hello
+
+    </div>
+<h1>My Django project</h1>
+
+<img height="50" width="100" src="{%static 'images/about-img.jpg' %}" alt="logo"/> -->
+
+
+
+        <!--Navbar Start-->
+        <nav class="navbar navbar-expand-lg navbar-dark">
+            <div class="container">
+                <!-- LOGO -->
+                <a class="navbar-brand logo" href="#">
+                    Chandan
+                </a>
+
+                <button class="navbar-toggler collapsed" type="button" data-toggle="collapse" data-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <div class="navbar-collapse collapse" id="navbarCollapse">
+                    <ul class="navbar-nav ml-auto">
+                        <li class="nav-item">
+                            <a href="#" class="nav-link active" data-scroll-nav="0" >Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="#" class="nav-link" data-scroll-nav="1" >About</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="#" class="nav-link" data-scroll-nav="2" >Services</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="contact.html" class="nav-link" >Works</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="contact.html" class="nav-link" >Blog</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="contact.html" class="nav-link" >Contact</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+        <!--Navbar End-->
+
+        <!--Home Section Start-->
+        <section id="home" class="banner" data-scroll-index="0">
+            <!--Slider Start-->
+            <div class="banner-slider">
+                <div id="slides">
+                    <div class="slides-container">
+                        <!--Slide 1-->
+                        <img src="{% static 'images/slider/img-1.jpg '%}" alt="">
+                        <!--Slide 2-->
+                        <img src="{% static 'images/slider/img-2.jpg '%}" alt="">
+                    </div>
+                </div>
+            </div>
+            <!--Slider End-->
+            <div class="container">
+                <!--Banner Content-->
+                <div class="banner-caption">
+                    <h1>Hi! Am Sai Chandan.</h1>
+                    <p class="cd-headline clip mt-30">
+                        <span>Creative Designer & Developer located in Hyderabad.</span><br>
+                        <span class="blc">Specialized in</span>
+                        <span class="cd-words-wrapper">
+                            <b class="is-visible">Creating Websites.</b>
+                            <b>Designing Logo.</b>
+                            <b>Designing UI</b>
+                            <b>Python Developer.</b>
+                        </span>
+                    </p>
+                </div>
+                <div class="arrow bounce">
+                    <a class="fa fa-chevron-down fa-2x" href="#" data-scroll-nav="1"></a>
+                </div>
+            </div>
+        </section>
+        <!--Home Section End-->
+
+<!--About Section Start-->
+<section class="about pt-100 pb-100" data-scroll-index="1">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-5 col-md-6">
+                <!--About Image-->
+                <div class="about-img">
+                    <img src="{% static 'images/about-img.jpg' %}" alt="">
+                </div>
+            </div>
+            <div class="col-lg-7 col-md-6">
+                <!--About Content-->
+                <div class="about-content">
+                    <div class="about-heading">
+                        <h2>About Me.</h2>
+                        <span>UI/UX Designer & Web Developer</span>
+                    </div>
+                    <p>I'm <b>Sai Chandan</b> Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to specimen book.</p>
+                    <p>It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English.</p>
+                    <!--About Social Icons-->
+                    <div class="social-icons">
+                        <a href="#"><i class="fa fa-facebook"></i></a>
+                        <a href="#"><i class="fa fa-twitter"></i></a>
+                        <a href="#"><i class="fa fa-dribbble"></i></a>
+                        <a href="#"><i class="fa fa-google-plus"></i></a>
+                        <a href="#"><i class="fa fa-pinterest"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<!--About Section End-->
+
+<!--Services Section Start-->
+<section class="services bg-gray pt-100 pb-50" data-scroll-index="2">
+    <div class="container">
+        <div class="row">
+            <div class="col">
+                <div class="heading text-center">
+                    <h6>Services</h6>
+                    <h2>What I Can Do</h2>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-4">
+                <!--Service Item-->
+                <div class="service-item">
+                    <span class="icon">
+                        <i class="fa fa-laptop"></i>
+                    </span>
+                    <h4>Web Design</h4>
+                    <p>Lorem Ipsum is simply dummy text of the Lorem has been the industry's standard dummy text ever.</p>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <!--Service Item-->
+                <div class="service-item">
+                    <span class="icon">
+                        <i class="fa fa-gears"></i>
+                    </span>
+                    <h4>Web Development</h4>
+                    <p>Lorem Ipsum is simply dummy text of the Lorem has been the industry's standard dummy text ever.</p>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <!--Service Item-->
+                <div class="service-item">
+                    <span class="icon">
+                        <i class="fa fa-mobile"></i>
+                    </span>
+                    <h4>Responsive Design</h4>
+                    <p>Lorem Ipsum is simply dummy text of the Lorem has been the industry's standard dummy text ever.</p>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <!--Service Item-->
+                <div class="service-item">
+                    <span class="icon">
+                        <i class="fa fa-rocket"></i>
+                    </span>
+                    <h4>Branding Identity</h4>
+                    <p>Lorem Ipsum is simply dummy text of the Lorem has been the industry's standard dummy text ever.</p>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <!--Service Item-->
+                <div class="service-item">
+                    <span class="icon">
+                        <i class="fa fa-pencil"></i>
+                    </span>
+                    <h4>Creative Design</h4>
+                    <p>Lorem Ipsum is simply dummy text of the Lorem has been the industry's standard dummy text ever.</p>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <!--Service Item-->
+                <div class="service-item">
+                    <span class="icon">
+                        <i class="fa fa-support"></i>
+                    </span>
+                    <h4>Support</h4>
+                    <p>Lorem Ipsum is simply dummy text of the Lorem has been the industry's standard dummy text ever.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<!--Services Section End-->
+
+<!--Stats Section Start-->
+<section class="stats pt-100 pb-100" style="background-image: url('images/background/stats-bg.jpg')">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-3 col-md-6">
+                <!--Stats Item-->
+                <div class="single-stat">
+                    <span class="stat-icon">
+                        <i class="fa fa-users" aria-hidden="true"></i>
+                    </span>
+                    <h2 class="counter" data-count="220">10</h2>
+                    <p>Happy Clients</p>
+                </div>
+            </div>
+            <div class="col-lg-3 col-md-6">
+                <!--Stats Item-->
+                <div class="single-stat">
+                    <span class="stat-icon">
+                        <i class="fa fa-thumbs-up" aria-hidden="true"></i>
+                    </span>
+                    <h2 class="counter" data-count="700">20</h2>
+                    <p>Projects Completed</p>
+                </div>
+            </div>
+            <div class="col-lg-3 col-md-6">
+                <!--Stats Item-->
+                <div class="single-stat">
+                    <span class="stat-icon">
+                        <i class="fa fa-edit" aria-hidden="true"></i>
+                    </span>
+                    <h2 class="counter" data-count="1100">10</h2>
+                    <p>Lines Of Code</p>
+                </div>
+            </div>
+            <div class="col-lg-3 col-md-6">
+                <!--Stats Item-->
+                <div class="single-stat">
+                    <span class="stat-icon">
+                        <i class="fa fa-trophy" aria-hidden="true"></i>
+                    </span>
+                    <h2 class="counter" data-count="160">15</h2>
+                    <p>Awards Achieved</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<!--Stats Section End-->
+
+
+
+
+<!--Footer Start-->
+<footer class="pt-50 pb-50">
+    <div class="container">
+        <div class="row text-center">
+            <div class="col-md-3 col-sm-6">
+                <!--Contant Item-->
+                <div class="contact-info">
+                    <h5>Sai Chandan</h5>
+                    <p>Web UI Designer & Web Developer.</p>
+                </div>
+            </div>
+            <div class="col-md-3 col-sm-6">
+                <!--Contant Item-->
+                <div class="contact-info">
+                    <h5>Phone No.</h5>
+                    <p>+91 9502531670</p>
+                </div>
+            </div>
+            <div class="col-md-3 col-sm-6">
+                <!--Contant Item-->
+                <div class="contact-info">
+                    <h5>Email</h5>
+                    <p>saichandanvanam@gmail.com</p>
+                </div>
+            </div>
+            <div class="col-md-3 col-sm-6">
+                <!--Contant Item-->
+                <div class="contact-info">
+                    <h5>Address</h5>
+                    <p>Hyderabad, Telangana.</p>
+                </div>
+            </div>
+        </div>
+        <div class="row text-center">
+            <div class="col-md-12">
+                <hr>
+                <p class="copy pt-30">
+                    Chandan &copy; 2023. All Right Reserved.
+                </p>
+            </div>
+        </div>
+    </div>
+</footer>
+<!--Footer End-->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!--Jquery js-->
+<script src="{%static 'js/jquery.min.js ' %}"></script>
+<!--Bootstrap js-->
+<script src="{%static 'js/bootstrap.min.js '%}"></script>
+<!--Stellar js-->
+<script src="{%static 'js/jquery.stellar.js '%}"></script>
+<!--Animated Headline js-->
+<script src="{%static 'js/animated.headline.js '%}"></script>
+<!--Owl Carousel js-->
+<script src="{%static 'js/owl.carousel.min.js '%}"></script>
+<!--ScrollIt js-->
+<script src="{%static 'js/scrollIt.min.js '%}"></script>
+<!--Isotope js-->
+<script src="{%static 'js/isotope.pkgd.min.js '%}"></script>
+<!--Magnific Popup js-->
+<script src="{%static 'js/jquery.magnific-popup.min.js '%}"></script>
+<!--Super Slider js-->
+<script src="{%static 'js/jquery.superslides.min.js '%}"></script>
+<!--Site Main js-->
+<script src="{%static 'js/main.js '%}"></script>
+<script>
+//Super Slider
+$('#slides').superslides({
+    animation: 'fade',
+    play: 3000
+});
+</script>
+
+
+</body>
+
+</html>

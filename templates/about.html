@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>about</title>
+
+    {% load static %}
+
+
+    <!--Bootstrap css-->
+    <link rel="stylesheet" href="{% static 'css/bootstrap.css' %}">
+
+    <!--Owl Carousel css-->
+    <link rel="stylesheet" href="{% static 'css/owl.carousel.min.css' %}">
+    <link rel="stylesheet" href="{% static 'css/owl.theme.default.min.css ' %}">
+
+    <!--Magnific Popup css-->
+    <link rel="stylesheet" href="{% static 'css/magnific-popup.css ' %}">
+
+    <!--Site Main Style css-->
+    <link rel="stylesheet" href="{% static 'css/style.css' %}">
+
+<link rel= "stylesheet"href= "{% static 'css/coderwebsite.css' %}" type= "text/css">
+
+<script type= "text/javascript"href= "{% static 'js/coderwebsite.js' %}"></script>
+
+
+    
+</head>
+<body>
+            <!--Contact Section Start-->
+            <section class="contact pt-100 pb-100" >
+                <div class="container">
+                    <div class="row">
+                        <div class="col text-center">
+                            <div class="heading">
+                               <h1> Ask Me Guru</h1>
+                               <h3>Employee Form</h3>
+                            </div>
+                        </div>
+                    </div>
+
+
+                    <div class="row">
+                        <div class="col-lg-10 offset-lg-1">
+                            <!--Contact Form-->
+                            <form action="/about.html"  method="post" ><input type='hidden' name='form-name' value='contactForm' /> 
+                                {% csrf_token %} 
+                                
+                                <div class="row">
+                                    <div class="col-md-6 form-group">
+                                        <!--name-->
+                                        <input type="text" class="form-control " name="name" id="name" placeholder="Name" minlength=3 required >
+                                    </div>
+                                    <div class="col-md-6 form-group">
+                                        <!--email-->
+                                        <input type="phone" class="form-control " name="number" id="email" placeholder="Employee number" required  >
+                                    </div>
+
+                                    <div class="col-md-6 form-group">
+                                        <!--email-->
+                                        <input type="text" class="form-control " name="address" id="email" placeholder="Employee Address" required  >
+                                    </div>
+
+                                    <div class="col-md-6 form-group">
+                                        <!--email-->
+                                        <input type="text" class="form-control " name="role" id="email" placeholder=" Job Role" required  >
+                                    </div>
+
+                                    <div class="col-md-6 form-group">
+                                        <!--email-->
+                                        <input type="text" class="form-control " name="emid" id="email" placeholder=" ID Number" required  >
+                                    </div>
+                                    
+                                    <div class="col-md-12 text-center">
+                                        <!--contact button-->
+                                        <button type="submit" id="contact-submit" class="mt-30 main-btn">
+                                            Send Message
+                                        </button>
+                                    </div>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+
+
+                    
+
+                </div>
+            </section>
+            <!--Contact Section End-->
+
+
+
+
+
+
+
+<!-- DataTales Example -->
+<div class="card shadow mb-4">
+    <div class="card-header py-3">
+        <h6 class="m-0 font-weight-bold text-primary">DataTables Example</h6>
+    </div>
+    <div class="card-body">
+        <div class="table-responsive">
+            <table class="table table-bordered" id="dataTable" width="100%" cellspacing="0">
+                {% block content %}
+                
+                <thead>
+                    <tr>
+                        <th>S.no</th>
+                        <th>Name :</th>
+                        <th>Ph Number :</th>
+                        <th>Address :</th>
+                        <th>Job Role :</th>
+                        <th>Employee I'd :</th>
+                    </tr>
+                </thead>
+                
+                
+                <tbody>
+                    <tr>
+                        <td>1</td>
+                        <td>{{about.0.name}}</td>
+                        <td>{{about.0.number}}</td>
+                        <td>{{about.0.address}}</td>
+                        <td>{{about.0.role}}</td>
+                        <td>{{about.0.emid}}</td>
+                    </tr>
+                    <tr>
+                        <td>2</td>
+                        <td>{{about.1.name}}</td>
+                        <td>{{about.1.number}}</td>
+                        <td>{{about.1.address}}</td>
+                        <td>{{about.1.role}}</td>
+                        <td>{{about.1.emid}}</td>
+                    </tr>
+                    <tr>
+                        <td>3</td>
+                        <td>{{about.2.name}}</td>
+                        <td>{{about.2.number}}</td>
+                        <td>{{about.2.address}}</td>
+                        <td>{{about.2.role}}</td>
+                        <td>{{about.2.emid}}</td>
+                    </tr>
+                    <tr>
+                        <td>4</td>
+                        <td>{{about.3.name}}</td>
+                        <td>{{about.3.number}}</td>
+                        <td>{{about.3.address}}</td>
+                        <td>{{about.3.role}}</td>
+                        <td>{{about.3.emid}}</td>
+                    </tr>
+                    
+    
+                                                           
+                    
+                </tbody>
+                
+                {% endblock content %}
+            </table>
+        </div>
+    </div>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!--Jquery js-->
+<script src="{%static 'js/jquery.min.js ' %}"></script>
+<!--Bootstrap js-->
+<script src="{%static 'js/bootstrap.min.js '%}"></script>
+<!--Stellar js-->
+<script src="{%static 'js/jquery.stellar.js '%}"></script>
+<!--Animated Headline js-->
+<script src="{%static 'js/animated.headline.js '%}"></script>
+<!--Owl Carousel js-->
+<script src="{%static 'js/owl.carousel.min.js '%}"></script>
+<!--ScrollIt js-->
+<script src="{%static 'js/scrollIt.min.js '%}"></script>
+<!--Isotope js-->
+<script src="{%static 'js/isotope.pkgd.min.js '%}"></script>
+<!--Magnific Popup js-->
+<script src="{%static 'js/jquery.magnific-popup.min.js '%}"></script>
+<!--Super Slider js-->
+<script src="{%static 'js/jquery.superslides.min.js '%}"></script>
+<!--Site Main js-->
+<script src="{%static 'js/main.js '%}"></script>
+<script>
+//Super Slider
+$('#slides').superslides({
+    animation: 'fade',
+    play: 3000
+});
+</script>
+        
+</body>
+</html>
